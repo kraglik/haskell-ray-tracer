@@ -1,0 +1,23 @@
+name:                 RayTracer
+version:              0.1.0.0
+synopsis:             
+-- description:
+-- license:
+-- license-file:
+homepage:             
+author:               Igor Kraglik
+maintainer:           tactickrieg@gmail.com
+category:             
+-- copyright:
+build-type:           Simple
+extra-source-files:   src/BaseTypes.hs, src/BaseFuncs.hs, src/LocalShadingModels.hs, src/ViewingSystem.hs, src/LightSources.hs, src/WhittedTracer.hs
+cabal-version:        >=1.10
+
+executable RayTracer
+  ghc-options:          -XExistentialQuantification -O3 -threaded
+  main-is:              Main.hs
+  other-modules:        BaseTypes, BaseFuncs, LocalShadingModels, ViewingSystem, LightSources, WhittedTracer, Primitives, Samplers, Textures
+  -- other-extensions:
+  build-depends:        base >= 4.7 && < 5, AC-Vector, random, array
+  hs-source-dirs:       src
+  default-language:     Haskell2010
