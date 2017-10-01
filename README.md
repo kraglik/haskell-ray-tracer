@@ -1,2 +1,5 @@
-# haskell-ray-tracer
-Simple ray tracer written in pure Haskell
+# Haskell ray tracer
+Simple ray tracer written in pure Haskell.
+Still no lenses are used, for sake of simplicity.
+
+![alt text](https://raw.githubusercontent.com/kraglik/haskell-ray-tracer/blob/master/result.png)
